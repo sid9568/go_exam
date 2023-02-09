@@ -1,0 +1,160 @@
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+body{
+
+  background-color: #eee;
+}
+
+.navbar-nav>li>a{
+
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-right:30px;
+  color: #fff;
+}
+
+
+.navbar-toggler {
+    padding: .20rem .50rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid white;
+
+    }
+
+    .nav-link{
+
+      color: #fff !important;
+    }
+
+
+.wrapper{
+      width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: #000;
+    clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+    transition: 1s all;
+}
+
+.navbar-brand{
+
+  color:#fff;
+  font-family: 'Allerta Stencil', sans-serif;
+  margin-bottom: 4px;
+  font-size: 27px;
+}
+
+.navbar-red:hover .wrapper{
+
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+
+}
+
+.navbar-brand:hover{
+
+  color:#fff;
+  
+}
+
+.navbar-red{
+
+  background-color: red;
+  color: #fff;
+
+}
+
+.all-show{
+
+  z-index: 10;
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-red navbar-dark">
+        <div class="wrapper">
+          
+        </div>
+  <div class="container-fluid all-show">
+    <a class="navbar-brand" href="#">Penton <i class="fa fa-codepen"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+        </li>
+        
+        
+      </ul>
+      <div class="d-flex flex-column sim">
+
+        <span>1 item added to your quote</span>
+        <small class="text-primary">view your quote</small>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+    <!--Container Main end-->
+
+    <script type="text/javascript">
+    	document.addEventListener("DOMContentLoaded", function(event) {
+   
+const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+const toggle = document.getElementById(toggleId),
+nav = document.getElementById(navId),
+bodypd = document.getElementById(bodyId),
+headerpd = document.getElementById(headerId)
+
+// Validate that all variables exist
+if(toggle && nav && bodypd && headerpd){
+toggle.addEventListener('click', ()=>{
+// show navbar
+nav.classList.toggle('show')
+// change icon
+toggle.classList.toggle('bx-x')
+// add padding to body
+bodypd.classList.toggle('body-pd')
+// add padding to header
+headerpd.classList.toggle('body-pd')
+})
+}
+}
+
+showNavbar('header-toggle','nav-bar','body-pd','header')
+
+/*===== LINK ACTIVE =====*/
+const linkColor = document.querySelectorAll('.nav_link')
+
+function colorLink(){
+if(linkColor){
+linkColor.forEach(l=> l.classList.remove('active'))
+this.classList.add('active')
+}
+}
+linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+ // Your code to run since DOM is loaded and ready
+});
+    </script>
