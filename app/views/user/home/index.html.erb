@@ -1,160 +1,335 @@
 <style type="text/css">
-	@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 body{
-
-  background-color: #eee;
+background-image: url("");
 }
-
 .navbar-nav>li>a{
-
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-right:30px;
-  color: #fff;
+text-transform: uppercase;
+font-size: 20px;
+margin-right:30px;
+color: #fff;
 }
-
-
 .navbar-toggler {
-    padding: .20rem .50rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid white;
-
-    }
-
-    .nav-link{
-
-      color: #fff !important;
-    }
-
-
+padding: .20rem .50rem;
+font-size: 1.25rem;
+line-height: 1;
+background-color: transparent;
+border: 1px solid white;
+}
+.nav-link{
+color: #fff !important;
+}
 .wrapper{
-      width: 100%;
-    position: absolute;
-    height: 100%;
-    background-color: #000;
-    clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
-    transition: 1s all;
+width: 100%;
+position: absolute;
+height: 100%;
+background-color: #000;
+clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+transition: 1s all;
 }
-
 .navbar-brand{
-
-  color:#fff;
-  font-family: 'Allerta Stencil', sans-serif;
-  margin-bottom: 4px;
-  font-size: 27px;
+color:#fff;
+font-family: 'Allerta Stencil', sans-serif;
+margin-bottom: 4px;
+font-size: 27px;
 }
-
 .navbar-red:hover .wrapper{
-
-  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
-
+clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
 }
-
 .navbar-brand:hover{
-
-  color:#fff;
-  
+color:#fff;
 }
-
 .navbar-red{
-
-  background-color: red;
-  color: #fff;
-
+background-color: red;
+color: #fff;
 }
-
 .all-show{
-
-  z-index: 10;
+z-index: 10;
+}
+h1
+{
+font-size: 40px;
+margin-top:50px;
+text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 </style>
 <nav class="navbar navbar-expand-lg navbar-red navbar-dark">
-        <div class="wrapper">
-          
-        </div>
+  <div class="wrapper">
+    
+  </div>
   <div class="container-fluid all-show">
-    <a class="navbar-brand" href="#">Penton <i class="fa fa-codepen"></i></a>
+    <a class="navbar-brand" href="#">Go Exams <i class="fa fa-codepen"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About us</a>
+          <a class="nav-link active" aria-current="page" href="#">Css University</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
+          <a class="nav-link" href="#">Ma Shakumbari Unviesity</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#">Events</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#">contact</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
         </li>
-        
-        
       </ul>
-      <div class="d-flex flex-column sim">
-
-        <span>1 item added to your quote</span>
-        <small class="text-primary">view your quote</small>
-        
-      </div>
     </div>
   </div>
 </nav>
-    <!--Container Main end-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    </style>
+  </head>
+  <body class="w3-light-grey">
+    <div class="w3-content" style="max-width:1600px">
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>Welcome to Go Exam</b></h1>
+        <h6>Welcome to the blog of <span class="w3-tag">Jane's world</span></h6>
+      </header>
+      
+      <div class="w3-row w3-padding w3-border">
+        <div class="w3-col l8 s12">
+          <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>How To Donwload Previoues Question paper</h3>
+              <iframe width="1280" height="720" src="https://www.youtube.com/embed/cev4Jfa6rP8?list=RDNgjERPTaC4Y" title="Galliyan Returns Full Song: Ek Villain Returns | John,Disha,Arjun,Tara | Ankit, Manoj, Mohit, Ektaa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 750PX;height: 400px;"></iframe>
+            </div>
+            <div class="w3-justify">
+              <div class="w3-container w3-white w3-margin w3-padding-large">
+                <div class="w3-justify">
+                  <div id="demo2" style="display:none">
+                    <div class="w3-row">
+                      <hr>
+                      <div class="w3-col l2 m3">
+                      magna aliqua.</p><br>
+                    </div>
+                  </div>
+                  <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col l2 m3">
+                      <img src="/w3images/girl.jpg" style="width:90px;">
+                    </div>
+                    <div class="w3-col l10 m9">
+                      <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                      <p>Love hats!!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About/Information menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <!-- Posts -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding bg-success text-center" style="color: #20c997;">
+            <h4 style="color: white;">How to Downlaod Step by step</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <h6>Step 1</h6>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <h6>Step 1</h6>
+              <span>Sed mattis nunc</span>
+              <br>
+            </li>
+            <li class="w3-padding-16">
+              <h6>Step 1</h6>
+              <span>Sed mattis nunc</span>
+              <br>
+              <span>Ultricies congue</span>
+            </li>
+            <li class="w3-padding-16">
+              <h6>Step 1</h6>
+              <span>Sed mattis nunc</span>
+              <br>
+              <span>Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script type="text/javascript">
-    	document.addEventListener("DOMContentLoaded", function(event) {
-   
-const showNavbar = (toggleId, navId, bodyId, headerId) =>{
-const toggle = document.getElementById(toggleId),
-nav = document.getElementById(navId),
-bodypd = document.getElementById(bodyId),
-headerpd = document.getElementById(headerId)
 
-// Validate that all variables exist
-if(toggle && nav && bodypd && headerpd){
-toggle.addEventListener('click', ()=>{
-// show navbar
-nav.classList.toggle('show')
-// change icon
-toggle.classList.toggle('bx-x')
-// add padding to body
-bodypd.classList.toggle('body-pd')
-// add padding to header
-headerpd.classList.toggle('body-pd')
-})
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-showNavbar('header-toggle','nav-bar','body-pd','header')
-
-/*===== LINK ACTIVE =====*/
-const linkColor = document.querySelectorAll('.nav_link')
-
-function colorLink(){
-if(linkColor){
-linkColor.forEach(l=> l.classList.remove('active'))
-this.classList.add('active')
+th, td {
+  padding: 15px;
 }
-}
-linkColor.forEach(l=> l.addEventListener('click', colorLink))
+</style>
+</head>
+<body>
 
- // Your code to run since DOM is loaded and ready
-});
-    </script>
+<h2>The padding Property</h2>
+
+<p>This property adds space between the border and the content in a table.</p>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+<div class="row">
+  <div class="col-md-4">.col-md-6</div>
+  <div class="col-md-4">.col-md-6</div>
+  <div class="col-md-4">.col-md-6</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4">.col-lg-7</div>
+  <div class="col-lg-4">.col-lg-7</div>
+  <div class="col-lg-4">.col-lg-7</div>
+</div>
+
+<div class="row">
+  <div class="col-xl-4">.col-xl-8</div>
+  <div class="col-xl-4">.col-xl-9</div>
+  <div class="col-xl-4">.col-xl-10</div>
+</div>
+
+
+
+
+
+<div class="row" style="max-width: 700px;">
+  
+        <div class="w3-container w3-padding bg-success text-center" style="color: #20c997;">
+            <h4 style="color: white;">How to Downlaod Step by step</h4>
+        </div>
+        <div class="float-left">
+  <div class="col-sm-6">
+    <div class="col-lg-6">Column</div>
+    <div class="col-lg-6">Column</div>
+    <div class="col-lg-6">Column</div>
+    <div class="col-lg-6">Column</div>
+    <div class="col-lg-6">Column</div>
+    <div class="col-lg-6">Column</div>
+
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+  </div>
+
+
+</div>
+
+    <div class="w3-container w3-padding bg-success text-center" style="color: #20c997;">
+            <h4 style="color: white;">How to Downlaod Step by step</h4>
+    </div>
+    <div class="float-left">
+  <div class="col-sm-6">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
